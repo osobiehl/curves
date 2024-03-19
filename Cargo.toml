@@ -1,0 +1,20 @@
+[package]
+name = "curves"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+coap = {path = "../coap-rs"}
+tokio = {version = "1.36.0", features = ["full"]}
+
+webrtc-dtls = {version = "0.8.0"}
+webrtc-util = {version = "0.8.0"}
+rustls  = {version = "^0.21.1", features = ["tls12"]}
+rustls-pemfile  = {version = "2.0.0"}
+rcgen  = {version = "^0.11.0"}
+pkcs8  = {version = "0.10.2"}
+sec1 = { version = "0.7.3", features = ["pem", "pkcs8", "std"]}
+coap-lite = "0.11.5"
+ring = {version = "^0.16.0"}
